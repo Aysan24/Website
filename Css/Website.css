@@ -1,3 +1,4 @@
+/*color*/
 :root {
     --color-primary: #3399ff;
     --color-secondary: #00ccff;
@@ -6,7 +7,9 @@
     --color-body: #999999;
 }
 
+/*Typography*/
 html {
+    /*62.5% of 16px = 10px*/
     font-size: 62.5%;
 }
 
@@ -54,4 +57,22 @@ p {
     }
 }
 
+a {
+    text-decoration: none;
+}
 
+/*Links*/
+.link-arrow {
+    color: var(--color-accent);
+    font-size: 2rem;
+    font-weight: bold; 
+}
+
+ .link-arrow::after {
+    content: '-->';
+    transition: margin-left 0.15s;
+ }
+
+.link-arrow:hover::after {
+    margin-left: 10px;
+}
