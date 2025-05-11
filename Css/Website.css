@@ -14,8 +14,8 @@ html {
 }
 
 body {
-    font-family: Inter, Arial, Helvetica, sans-serif;
     color: var(--color-body);
+    font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
     line-height: 1.5;
 }
@@ -75,4 +75,39 @@ a {
 
 .link-arrow:hover::after {
     margin-left: 10px;
+}
+
+/*Badges*/
+.badge {
+    font-size: 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    color: white;
+    padding: 0.8rem 2.2rem;
+
+
+}
+
+.badge--primary {
+    background-color: var(--color-primary);
+}
+
+.badge--secondary {
+    background-color: var(--color-secondary);
+}
+
+.badge--small {
+    font-size: 1.6rem;
+    padding: 0.9rem 1.3rem;
+}
+
+@media screen and (min-width: 1024p) {
+     .badge {
+        font-size: 1.5rem;
+        padding: 0.8rem 1.5rem;
+     }   
+     .badge--small {
+        font-size: 1.2;
+        padding: 0.9rem 1rem;
+     } 
 }
